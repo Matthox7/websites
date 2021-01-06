@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --color-red: hsl(0, 100%, 74%);
+    --color-green: hsl(154, 59%, 51%);
+    --color-blue: hsl(248, 32%, 49%);
+    --color-dark-blue: hsl(249, 10%, 26%);
+    --color-grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+body {
+    background: url("images/bg-intro-desktop.png"), var(--color-red);
+}
+
+#container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container #left {
+    color: white;
+    box-sizing: border-box;
+    width: 40%;
+    padding: 2rem;
+}
+#container #left h1 {
+    font-weight: 700;
+    font-size: 4rem;    
+}
+#container #left p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#container #right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#container #right #free_try {
+    background-color: var(--color-blue);
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px black;
+}
+#container #right #form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px black;
+    text-align: center;
+}
+#container #right #form form {
+    display: flex;
+    flex-direction: column;
+}
+#container #right #form form input {
+    margin: 1rem;
+}
+#container #right #form form input {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+#container #right #form form input[type = button] {
+    background-color: var(--color-green);
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+    transition-duration: 0.2s;
+}
+#container #right #form form input[type = button]:hover {
+    transform: translateY(-0.2rem);
+}
+#container #right #form form input[type = button]:active {
+    transform: translateY(0);
+}
+#container #right #form h6 {
+    font-weight: 400;
+    font-size: 0.5rem;
+    color: var(--color-grayish-blue);
+}
+#container #right #form h6 span {
+    color: var(--color-red);
+    font-weight: 600;
+    font-size: 0.5rem;
+}
